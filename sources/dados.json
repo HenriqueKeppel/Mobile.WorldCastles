@@ -1,0 +1,32 @@
+[
+    {
+      "nome": "Ballyloughan - MG",
+      "url": "images/castle-ballyloughan-300x300.jpg",
+      "dia":25,
+      "mes":"Julho"
+    },
+    {
+      "nome": "Carlow - MG",
+      "url": "images/castle-carlow-300x300.jpg",
+      "dia":8,
+      "mes":"Agosto"
+    },
+    {
+      "nome": "Neath - MG",
+      "url": "images/castle-neath-300x300.jpg",
+      "dia":16,
+      "mes":"Setembro"
+    },
+    {
+      "nome": "Rising - MG",
+      "url": "images/castle-rising-norfolk-300x300.jpg",
+      "dia":25,
+      "mes":"Novembro"
+    },
+    {
+        "nome": "StDonats - MG",
+        "url": "images/castle-stdonats-300x300.jpg",
+        "dia":25,
+        "mes":"Novembro"
+      }
+  ]
