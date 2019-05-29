@@ -27,8 +27,8 @@
                 <div class="bar"></div>
                 <div class="header">
                     <div class="details">
-                        <h3>Marcos Arrais</h3>
-                        <span>Professor, BHZ-MG, Brasil</span>
+                        <h3>Henrique Keppel</h3>
+                        <span>Arquiteto de Software, BHZ-MG, Brasil</span>
                     </div>
                 </div>
                 <div class="card-container">
@@ -104,8 +104,7 @@
                             <div class="planned-trip__description">
                                 <button id="butSend" class="btn btn-block btn-primary">Enviar em Background</button>
                                 <span style="font-size:12px; word-break: break-all;" id="send_msg">...</span>
-                            </div>
-            
+                            </div>            
                         </div>
                     </div>
                 </div>
@@ -118,5 +117,29 @@
 
     <!--Interações da aplicação-->
     <script src="app.js"></script>
+
+    <!-- service-work -->
+    <script>    
+        // Variavel global para permitir que outros scripts possam acessar o service-work
+        let swRegistration = null;
+
+        // Verifica se o navegador tem suporte a serviceWorker
+        if ('serviceWorker' in navigator)
+        {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                .then((reg) => {
+                    console.log("Service worker registrado com sucesso!");
+                    swRegistration = reg;
+                });
+            });
+        }
+        else
+        {
+            // Se não tem suporte a serviceWorker, redireciona para uma pagina web
+            window.location.href = ";"
+        }
+
+    </script>
 </body>
 </html>
