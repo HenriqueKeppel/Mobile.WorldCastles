@@ -81,7 +81,8 @@ ajax.onreadystatechange = function() {
             var html_viagens = "";
             for (var i = 0; i < data_json.length; i++) {
  
-                html_viagens += template_card(data_json[i]['nome'],data_json[i]['url'],data_json[i]['dia'],data_json[i]['mes']);
+                //html_viagens += template_card(data_json[i]['nome'],data_json[i]['url'],data_json[i]['dia'],data_json[i]['mes']);
+                html_viagens += template_card(data_json[i]['nome'],data_json[i]['url'],data_json[i]['distancia'],data_json[i]['direcao']);
  
             }
  
@@ -93,7 +94,27 @@ ajax.onreadystatechange = function() {
 }
  
  
-var template_card = function(cidade,url,dia,mes){
+// var template_card = function(cidade,url,dia,mes){
+ 
+//     return '<div class="planned-trips__card">\n' +
+//     '                        <div class="planned-trip__image">\n' +
+//     '                            <img src="'+url+'" alt="imagem da viagem" />\n' +
+//     '                        </div>\n' +
+//     '                        <div class="planned-trip__description">\n' +
+//     '                            <span>'+cidade+'</span>\n' +
+//     '                            <div class="pinned-trip__itenary">\n' +
+//     '                                <span>7</span><span>Dias</span>\n' +
+//     '                                <span>56 <i class="fa fa-camera-retro"></i></span>\n' +
+//     '                            </div>\n' +
+//     '                        </div>\n' +
+//     '                        <div class="planned-trip__date">\n' +
+//     '                            <span>'+dia+'</span>\n' +
+//     '                            <span>'+mes+'</span>\n' +
+//     '                        </div>\n' +
+//     '                    </div>';
+// }
+
+var template_card = function(cidade,url,distancia,direcao){
  
     return '<div class="planned-trips__card">\n' +
     '                        <div class="planned-trip__image">\n' +
@@ -102,13 +123,13 @@ var template_card = function(cidade,url,dia,mes){
     '                        <div class="planned-trip__description">\n' +
     '                            <span>'+cidade+'</span>\n' +
     '                            <div class="pinned-trip__itenary">\n' +
-    '                                <span>7</span><span>Dias</span>\n' +
+    '                                <span>800</span><span>Anos</span>\n' +
     '                                <span>56 <i class="fa fa-camera-retro"></i></span>\n' +
     '                            </div>\n' +
     '                        </div>\n' +
     '                        <div class="planned-trip__date">\n' +
-    '                            <span>'+dia+'</span>\n' +
-    '                            <span>'+mes+'</span>\n' +
+    '                            <span>'+distancia+'</span>\n' +
+    '                            <span>'+direcao+'</span>\n' +
     '                        </div>\n' +
     '                    </div>';
 }

@@ -1,32 +1,38 @@
 [
     {
-      "nome": "Ballyloughan - MG",
+      "nome": "Borgo Medievalle - Turim",
+      "url": "images/borgoMedievale-Turim-300x300.jpg",
+      "distancia":13,
+      "direcao":"Norte"
+    },
+    {
+      "nome": "Ballyloughan - Turim",
       "url": "images/castle-ballyloughan-300x300.jpg",
-      "dia":25,
-      "mes":"Julho"
+      "distancia":25,
+      "direcao":"Sul"
     },
     {
-      "nome": "Carlow - MG",
+      "nome": "Carlow - Turim",
       "url": "images/castle-carlow-300x300.jpg",
-      "dia":8,
-      "mes":"Agosto"
+      "distancia":8,
+      "direcao":"Leste"
     },
     {
-      "nome": "Neath - MG",
+      "nome": "Neath - Roma",
       "url": "images/castle-neath-300x300.jpg",
-      "dia":16,
-      "mes":"Setembro"
+      "distancia":160,
+      "direcao":"Sul"
     },
     {
-      "nome": "Rising - MG",
+      "nome": "Rising - Napole",
       "url": "images/castle-rising-norfolk-300x300.jpg",
-      "dia":25,
-      "mes":"Novembro"
+      "distancia":25,
+      "direcao":"Oeste"
     },
     {
-        "nome": "StDonats - MG",
+        "nome": "StDonats - Turim",
         "url": "images/castle-stdonats-300x300.jpg",
-        "dia":25,
-        "mes":"Novembro"
+        "distancia":10,
+        "direcao":"Norte"
       }
   ]
