@@ -125,6 +125,7 @@
                 .then((reg) => {
                     console.log("Service worker registrado com sucesso!");
                     swRegistration = reg;
+                    initialiseUI();
                 });
             });
         }
